@@ -27,9 +27,16 @@ public class App {
         for (i=0;i<10;i++){
             int valor = ler.nextInt();
             L.insereInicio(valor);
-        if(valor >=60){
-            idoso++;
-        }
+         
+        //Com o While abaixo ele percorre verificando se o prim é diferente de null
+        //No If ele guarda a cada interação no idoso e no final exibe essa contagem.
+        while (L.prim != null)
+		{
+		    if(valor >=60){
+                        idoso++;
+                    }
+                    L.prim = L.prim.next;
+		}
         }
         System.out.println("Qtd de Pessoas com mais de 60 Anos:"+idoso);
         L.mostraLista();
