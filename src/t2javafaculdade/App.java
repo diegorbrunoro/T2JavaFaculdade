@@ -23,11 +23,8 @@ public class App {
         int i=0;
         int idoso =0;
          
-        System.out.println("Informe o Tamanho da Lista:");
-        int t = ler.nextInt();
         
-        for (i=0;i<t;i++){
-            System.out.println("Informe a idade: " + "Essa sera a inercao: " + (i+1) + " de:" + (t-i));
+        for (i=0;i<10;i++){
             int valor = ler.nextInt();
             L.insereInicio(valor);
         if(valor >=60){
