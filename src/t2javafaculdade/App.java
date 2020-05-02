@@ -1,7 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/* FACULDADE DOM BOSCO DE PORTO ALEGRE
+ *  Sistemas de Informação - Estrtura de Dados - Segundo T1
+ * 
+ * Objetivo do Programa: 
+ * Dada uma lista simplesmente encadeada L, cujo primeiro nodo é apontado por L.prim e que 
+ * armazena as idades dos indivíduos de uma determinada cidade.  
+ * Faça um programa que percorre a lista, a partir do primeiro nodo, e informe a quantidade de 
+ * indivíduos que estão aptos a receber a vacina da gripe pelo SUS. Considerando que apenas 
+ * indivíduos com 60 anos ou mais podem receber a vacina.
+ * Componentes do grupo: Diego Rodrigues Brunoro
+ * Data da entrega do arquivo fonte: 01/05/2020
  */
 package t2javafaculdade;
 
