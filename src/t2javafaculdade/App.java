@@ -27,6 +27,9 @@ public class App {
         Scanner ler = new Scanner(System.in);
         
         Lista L = new Lista();
+
+        Nodo nodoAtual = L.prim;
+        
         int i=0;
         int idoso =0;
          
@@ -34,21 +37,22 @@ public class App {
         for (i=0;i<10;i++){
             int valor = ler.nextInt();
             L.insereInicio(valor);
-         
-        //Com o While abaixo ele percorre verificando se o prim é diferente de null
-        //No If ele guarda a cada interação no idoso e no final exibe essa contagem.
-        while (L.prim != null)
+         }   
+         nodoAtual = L.prim;
+
+        while (nodoAtual != null)
 		{
-		    if(valor >=60){
+                     
+                
+                    if(nodoAtual.dado >=60){
                         idoso++;
                     }
-                    L.prim = L.prim.next;
-		}
-        }
+                    nodoAtual = nodoAtual.next;  
+                }
         System.out.println("Qtd de Pessoas com mais de 60 Anos:"+idoso);
         L.mostraLista();
         
 
+    
     }
 }
-
